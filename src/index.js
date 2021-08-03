@@ -1,12 +1,9 @@
-import _ from "lodash"
 import "./styles/style.css"
+import data from '../data/kline-1628017256904.json'
 
-function component() {
-  const element = document.createElement('div')
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ')
-  element.classList.add('hello');
+var canvas = document.getElementById('mycanvas');
+var ctx = canvas.getContext('2d');
+console.log('Imported data: ', data)
 
-  return element
-}
-
-document.body.appendChild(component())
+ctx.fillStyle = 'black'
+ctx.fillRect(0,  0,  500, 500)

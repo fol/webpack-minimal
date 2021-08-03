@@ -19,6 +19,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack Minimal',
+      template: './src/public/index.html'
     })
   ],
   module: {
